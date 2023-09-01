@@ -16,15 +16,15 @@ const SkillLevel = (...props) => {
 };
 export default SkillLevel;
 
-/* const SkillLevel = () => {
-  return (
-    <div className="skills">
-      <div className="skill-circle selected" />
-      <div className="skill-circle" />
-      <div className="skill-circle" />
-      <div className="skill-circle" />
-      <div className="skill-circle" />
-    </div>
-  );
-};
-export default SkillLevel; */
+// const SkillLevel = () => {
+//   return (
+//     <div className="skills">
+//       <div className="skill-circle selected" />
+//       <div className="skill-circle" />
+//       <div className="skill-circle" />
+//       <div className="skill-circle" />
+//       <div className="skill-circle" />
+//     </div>
+//   );
+// };
+// export default SkillLevel;
