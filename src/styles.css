@@ -7,6 +7,7 @@ body {
     background-image: url(background2.jpg);
     background-repeat: round;
     background-attachment: fixed;
+    animation: fadeInAnimation 1s ease 0s 1 normal none;
 }
 
 .name {
@@ -100,20 +101,12 @@ figure {
 
 img {
     border-radius: 1%;
-    /*!*transition: transform 2s;*!*/
-
-    /*filter: grayscale(0);*/
-    /*!*transform: scale(1.05);*!*/
-    /*!*transition-delay: 2s;*!*/
-    /*transition: all 2s ease;*/
-    /*animation: ;*/
-    animation: myAnim 2s ease 0s 1 normal none;
-
+    animation: fadeInAnimation 1s ease 0s 1 normal none;
 }
 
-@keyframes myAnim {
+@keyframes fadeInAnimation {
     0% {
-        transform: translateX(-50px) translatey(-10px) scale(1.05);
+        transform: translateX(-2%) translatey(-1%) scale(1.05);
         filter: grayscale(90%);
     }
 
