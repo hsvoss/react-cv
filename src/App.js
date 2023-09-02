@@ -1,33 +1,30 @@
 import React from "react";
 import "./styles.css";
-import experience from "./experience";
+import experience from "./data/experience";
 import CVComponent from "./CVComponent";
-import education from "./education";
+import education from "./data/education";
 import InfoCard from "./InfoCard";
 import SkillsList from "./SkillsList";
 
-const info = {
-    imgSrc: "./FotoPL.jpg",
-    name: "Hendrik Sebastian Voß",
-    profession: "Industrial Civil Engineer",
-    address: "Neanderstr. 3, 40878 Ratingen, Germany",
-    phone: "+49 1578 5421-364",
-    email: "hendrik@familievoss.org",
-    about: "Experience in project coordination, team and customer management. What I've loved most of every job I've had is established new networks based on trust, because it makes everything thrive. My current focus is to become a Web Developer and an E-Commerce expert."
-};
 
 export default function App() {
     const experienceComponent = experience.map(item => (
-        <CVComponent item={item}/>
+        <>
+            <h4>{item.date}</h4>
+            <CVComponent item={item}/>
+        </>
     ));
-    const educationComponent = education.map(item => <CVComponent item={item}/>);
+    const educationComponent = education.map(item => <>
+        <h4>{item.date}</h4>
+        <CVComponent item={item}/>
+    </>);
 
     return (
         <div>
             <main>
                 <section className="container">
                     <section className="info">
-                        <InfoCard info={info}/>
+                        <InfoCard/>
                         <h2>
                             <i className="fa fa-cogs"/> Skills
                         </h2>
@@ -38,7 +35,9 @@ export default function App() {
                         <h1>
                             <i className="fa fa-briefcase fa"/> Work Experience{" "}
                         </h1>
-                        {experienceComponent}
+                        <div className="grid">
+                            {experienceComponent}
+                        </div>
                     </section>
                     <hr/>
                     <section className="education">
@@ -46,7 +45,9 @@ export default function App() {
                             {" "}
                             <i className="fa fa-university"/> Education{" "}
                         </h1>
-                        {educationComponent}
+                        <div className="grid">
+                            {educationComponent}
+                        </div>
                     </section>
 
                     <section className="other">

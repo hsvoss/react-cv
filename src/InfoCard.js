@@ -1,26 +1,24 @@
 import React from "react";
 
-function InfoCard(props) {
+function InfoCard() {
     return (
         <div>
             <figure>
-                <img src={props.info.imgSrc} alt=""/>
+                <img src="Foto.jpg" alt="Hendrik Sebastian Voß"/>
             </figure>
-            <h2>{props.info.name}</h2>
+            <h2>Hendrik Sebastian Voß</h2>
             <p>
-                <i className="fa fa-graduation-cap"/> {props.info.profession}
+                Senior Consultant at <nobr>Vision Consulting GmbH</nobr>
             </p>
-            <p>
-                <i className="fa fa-home"/> {props.info.address}
-            </p>
-            <p>
-                <i className="fa fa-phone"/> {props.info.phone}
-            </p>
-            <p>
-                <i className="fa fa-at"/> {props.info.email}
-            </p>
+            <p>I am a front-end engineer with a strong focus on interfaces and experiences working remotely
+                from Düsseldorf, Germany.</p>
             <hr/>
-            <p>{props.info.about}</p>
+            <p>
+                <i className="fa fa-phone"/> +49 1578 5421364
+            </p>
+            <p>
+                <i className="fa fa-envelope"/> hendrik@familievoss.org
+            </p>
             <hr/>
         </div>
     );
