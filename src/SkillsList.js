@@ -8,7 +8,7 @@ const SkillsList = () => {
         {name: "French", level: 1},
         {name: "Java", level: 5},
         {name: "Angular", level: 4},
-        {name: "React", level: 3},
+        {name: "React", level: 4},
 
     ]);
     return (

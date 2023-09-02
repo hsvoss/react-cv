@@ -1,29 +1,32 @@
 const experience = [
     {
         id: 3,
-        date: "Sep 2019 - current",
+        startDate: "Sep 2019",
+        endDate: "current",
         title: "Online-shop Owner / Olivias Garderob",
         description:
-            "Online vintage and preloved clothing store for chic and sustainable women <https://oliviasgarderob.com/>"
+            "Online vintage and preloved clothing store for chic and sustainable women "
     },
     {
         id: 2,
-        date: "Sep 2018 - Jun 2019",
-
-        title: "Key Accout Manager Spain (Intern) / Renjer Snacks AB",
+        startDate: "Dec 2017",
+        title: "CairNew Mailbot",
         description:
-            "Responsible for identify and contact new potential clients in Spain (unexplored market for the company)"
+            "bla",
+        tasks: ["Erweiterung und Pflege eines E-Mail-Bots",
+            "Automatisiertes Auslesen von Formschreiben",
+            "Mapping auf Schnittstelle der Kundendatenbank"
+        ],
+        tools: "Java 8, Spring, Maven, Eclipse, git, Postman, REST, SOAP, Swing"
     },
     {
         id: 1,
-        date: "Sep 2015",
-        // endDate: "March 2017",
-        title: "Learning application for the North Rhine-Westphalia's fishing license",
+        startDate: "Sep 2015",
+        title: "Lernfisch",
         description:
-            "In charge of the implementation and operation of the first business accelerator in Latin America for female entrepreneurs .",
+            "Learning application for North Rhine-Westphalia's fishing license.",
         tasks: ["Backend based on MySQL and PHP", "Frontend written with HTML, JavaScript and CSS"],
         tools: "HTML, PHP, JavaScript, CSS, MySQL, Eclipse/Aptana, PhpStorm"
-
     }
 ];
 

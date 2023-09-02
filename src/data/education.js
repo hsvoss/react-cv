@@ -1,7 +1,7 @@
 const education = [
     {
         id: 1,
-        date: "Sept 2019",
+        startDate: "Sept 2019",
         endDate: "May 2020",
         title: "Web Development / FooCafe",
         description:
@@ -9,7 +9,7 @@ const education = [
     },
     {
         id: 2,
-        date: "March 2000",
+        startDate: "March 2000",
         endDate: "May 2007",
         title: "Civil Industrial Engineering / University of Chile",
         description:

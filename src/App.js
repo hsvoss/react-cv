@@ -10,7 +10,15 @@ import SkillsList from "./SkillsList";
 export default function App() {
     const experienceComponent = experience.map(item => (
         <>
-            <h4>{item.date}</h4>
+            <div className="dategrid">
+                <div className="date">
+                    <nobr>{item.startDate}</nobr>
+                </div>
+                <div className="date">{item.endDate && ' - '}</div>
+                <div className="date">
+                    <nobr>{item.endDate}</nobr>
+                </div>
+            </div>
             <CVComponent item={item}/>
         </>
     ));
@@ -73,11 +81,7 @@ export default function App() {
                 </section>
             </main>
             <footer className="footer">
-                <p>Paula Latorre</p>
-                <i className="fa fa-facebook-square"/>
-                <i className="fa fa-instagram"/>
-                <i className="fa fa-github"/>
-                <i className="fa fa-linkedin-in"/>- Foocoding assigment: Resume
+                <p>Hendrik Sebastian Voß - <a href="impressum">Impressum</a></p>
             </footer>
         </div>
     );
